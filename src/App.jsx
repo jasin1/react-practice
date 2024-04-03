@@ -1,20 +1,21 @@
-import { useState } from 'react';
-import EmailInput from './assets/components/EmailInput/EmailInput.jsx';
+// import { useState } from 'react';
+import Email from './pages/email/email.jsx';
 import './App.css';
-
+import {Routes, Route} from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0)
+    // const [count, setCount] = useState(0)
 
-  return (
-    <>
-        <main>
-            <div className="email">
-                <EmailInput />
-            </div>
-        </main>
-    </>
-  )
+    return (
+        <>
+
+                <Routes>
+                    <Route path="/email" element={<Email/>}/>
+                </Routes>
+
+
+        </>
+    )
 }
 
 export default App
