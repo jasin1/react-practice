@@ -1,5 +1,6 @@
 // import { useState } from 'react';
 import Email from './pages/email/email.jsx';
+import UserInput from './pages/repeater/repeater.jsx';
 import './App.css';
 import {Routes, Route} from "react-router-dom";
 
@@ -11,6 +12,7 @@ function App() {
 
                 <Routes>
                     <Route path="/email" element={<Email/>}/>
+                    <Route path="/userinput" element={<UserInput/>}/>
                 </Routes>
 
 
